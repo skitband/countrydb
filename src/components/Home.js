@@ -6,7 +6,7 @@ import Loader from './Loader';
 const Home = () => {
 
   const [countries, setCountries] = useState([]);
-  const [countryName, setcountryName] = useState('libya');
+  const [countryName, setcountryName] = useState('japan');
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
