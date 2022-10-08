@@ -22,17 +22,15 @@ const SideNav = ({ itemsPerPage, countries, setcountryName }) => {
 
     return (
         <div className="ms-5 mt-3">
-            <div className="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
+            <div className="d-flex flex-column align-items-stretch flex-shrink-0 bg-white border-0 p-3">
                 <div className="list-group list-group-flush border-bottom scrollarea">
                     <Countries currentItems={currentItems} selectCountry={setcountryName} />
                 </div>
-                <div>
+            </div>
+                <div className="bg-white border-0">
                     <ReactPaginate
                         previousLabel="<"
                         nextLabel=">"
-                        pageClassName="page-item"
-                        pageLinkClassName="page-link bg-light text-secondary"
-                        previousClassName="page-item bg-light text-secondary"
                         previousLinkClassName="page-link"
                         nextClassName="page-item"
                         nextLinkClassName="page-link"
@@ -43,12 +41,10 @@ const SideNav = ({ itemsPerPage, countries, setcountryName }) => {
                         marginPagesDisplayed={2}
                         pageRangeDisplayed={5}
                         onPageChange={handlePageClick}
-                        containerClassName="pagination pagination-sm responsive"
+                        containerClassName="paginate"
                         activeClassName="active"
                     />
                 </div>
-                
-            </div>
         </div>
     )
 }

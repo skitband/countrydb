@@ -23,8 +23,8 @@ const Home = () => {
   return (
     <div>
       <div className="px-4 py-5 my-5 text-center">
-        <div className="col-7 mx-auto border border-1 bg-light">
-          <div className="row">
+        <div className="col-7 mx-auto border border-1 bg-floral">
+          <div className="row p-3">
             <div className="col-4">
             {isLoading ? (
               <Loader /> ) : (
