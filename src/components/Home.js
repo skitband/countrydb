@@ -14,7 +14,8 @@ const Home = () => {
           setIsLoading(true);
           const response = await fetch('https://restcountries.com/v3.1/all');
           const data = await response.json();
-          setCountries(data);
+          const sorted_by_name = data.sort( (a,b) => a.name.common > b.name.common ? 1:-1 );
+          setCountries(sorted_by_name);
           setIsLoading(false);
       }
       fetchCountries()

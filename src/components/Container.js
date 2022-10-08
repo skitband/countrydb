@@ -40,7 +40,7 @@ const Container = ({selectedCountry}) => {
         <div className="mx-3">
             { countryDetails.length > 0 && !isLoading ? countryDetails.map((c, i) => {
                 return <div key={i}>
-                <div  className="row m-3 p-3 bg-white">
+                <div  className="row m-3 p-3 bg-container">
                     <div className="p-3">
                         <h4>Country</h4>
                         <div>
@@ -52,7 +52,7 @@ const Container = ({selectedCountry}) => {
                     </div>
                 </div>
 
-                <div className="row m-3 p-3 bg-white">
+                <div className="row m-3 p-3 bg-container">
                     <h4>Country Details</h4>
                     <div className="col-3">
                     <div>

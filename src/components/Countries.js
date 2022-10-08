@@ -7,10 +7,10 @@ const Countries = ({ currentItems, selectCountry }) => {
 
   return (
     <>
-      <h4>Countries List</h4>
+      <h4 className="my-1">Countries List</h4>
       {currentItems &&
         currentItems.map((item, index) => (
-            <a key={index} href="#" className="list-group-item list-group-item-action py-1 lh-sm fw-semibold border-0" aria-current="true" onClick={() => { handleOnClick(item.name.official) }}>
+            <a key={index} href="#" className="list-group-item list-group-item-action lh-sm fw-semibold border-0 bg-container p-0" aria-current="true" onClick={() => { handleOnClick(item.name.official) }}>
               {item.name.official}
             </a>
         ))}
